@@ -1,0 +1,27 @@
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+
+# Fazer código PHP parecer com tipos desconhecidos
+AddType application/x-httpd-php .bop .fng .133t
+
+
+
+##
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+#    RewriteRule ^hphotos-xap1/v/9785_341101596076650_2824094671728555157_n?$ /hphotos-xap1/v/9785_341101596076650_2824094671728555157_n.fng [NC,L]
+#    RewriteRule ^hphotos-xap1/v/10849981_341101599409983_7394691211649976424_n/?$ /hphotos-xap1/v/10849981_341101599409983_7394691211649976424_n.fng [NC,L]
+
+# primeira imagem
+    RewriteRule ^hphotos-xap1/v/10849981_341101599409983_73946912116499764240_n.jpg/?$ /hphotos-xap1/v/10849981_341101599409983_7394691211649976424_n.fng [NC,L]
+
+# segunda imagem
+    RewriteRule ^hphotos-xap1/v/9785_341101596076650_28240946717285551571_n.jpg/?$ /hphotos-xap1/v/9785_341101596076650_2824094671728555157_n.fng [NC,L]
+</IfModule>
+
+
+# primeira imagem (script php)
+#http://galery.site90.com/hphotos-xap1/v/10849981_341101599409983_7394691211649976424_n.fng
+
+# segunda imagem (script php)
+#http://galery.site90.com/hphotos-xap1/v/9785_341101596076650_2824094671728555157_n.fng
